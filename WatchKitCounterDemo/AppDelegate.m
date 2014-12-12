@@ -19,7 +19,6 @@
     
     reply(@{@"insert counter value":@(1)});
     
-    //Can only add NSArray (not mutable) to NSUserDefaults - add all counter values to mutable array, then copy over
     NSString *counterValue = [userInfo objectForKey:@"counterValue"];
     if (!self.tempCounterData) {
         self.tempCounterData = [[NSMutableArray alloc] init];
@@ -33,6 +32,7 @@
     
     vc.counterData = self.tempCounterData;
     [vc.mainTableView reloadData];
+
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -10,7 +10,6 @@
 
 @interface ViewController ()
 
-@property (strong, nonatomic) NSUserDefaults *defaults;
 @end
 
 @implementation ViewController
@@ -33,12 +32,6 @@
     cell.textLabel.text = counterValueString;
     
     return cell;
-}
-
-- (IBAction)clearTableValues:(id)sender {
-    self.counterData = [[NSMutableArray alloc] initWithArray:@[]];
-    
-    [self.mainTableView reloadData];
 }
 
 @end

@@ -34,13 +34,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Counter Table" id="MOz-Qp-gXF">
-                        <barButtonItem key="rightBarButtonItem" title="Clear" id="ODB-xl-eZx">
-                            <connections>
-                                <action selector="clearTableValues:" destination="BYZ-38-t0r" id="Kh3-8O-Tok"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Counter Table" id="MOz-Qp-gXF"/>
                     <connections>
                         <outlet property="mainTableView" destination="HPT-Bi-858" id="ViX-3F-2wG"/>
                     </connections>
