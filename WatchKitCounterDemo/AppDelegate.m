@@ -17,9 +17,10 @@
 
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
     
-    reply(@{@"insert counter value":@(1)});
-    
     NSString *counterValue = [userInfo objectForKey:@"counterValue"];
+    
+    reply(@{@"insert counter value":counterValue});
+    
     if (!self.tempCounterData) {
         self.tempCounterData = [[NSMutableArray alloc] init];
     }
