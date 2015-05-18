@@ -28,8 +28,7 @@
     [self.tempCounterData addObject:counterValue];
     
     //Add the new counter value and reload the table view
-    AppDelegate *tmpDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    ViewController *vc = (ViewController *)((UINavigationController*)tmpDelegate.window.rootViewController).visibleViewController;
+    ViewController *vc = (ViewController *)((UINavigationController*)self.window.rootViewController).visibleViewController;
     
     vc.counterData = self.tempCounterData;
     [vc.mainTableView reloadData];
